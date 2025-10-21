@@ -8,7 +8,7 @@
         body {
             background: #0a0a0a url('/images/wallpaper.png') no-repeat center center fixed;
             background-size: cover;
-            font-family: "Segoe UI", "Tahoma", sans-serif;
+            font-family: "Segoe UI", "Lucida Bright", sans-serif;
             color: #d4d4d4;
             margin: 0;
             padding: 10px;
@@ -55,10 +55,10 @@
             font-size: 12px;
             backdrop-filter: blur(3px);
         }
-        .damage-slash { background: #8b0000; color: #ff6b6b; padding: 1px 4px; font-size: 10px; margin: 0 1px; }
-        .damage-pierce { background: #1e3a5f; color: #6ba8ff; padding: 1px 4px; font-size: 10px; margin: 0 1px; }
-        .damage-blunt { background: #2d5a2d; color: #90ee90; padding: 1px 4px; font-size: 10px; margin: 0 1px; }
-        .specialty-tag { background: #333; color: #ccc; padding: 1px 3px; font-size: 9px; margin: 1px; display: inline-block; }
+        .damage-slash { background: #8b0000; color: #ff6b6b; padding: 1px 4px; font-size: 13px; margin: 0 1px; }
+        .damage-pierce { background: #1e3a5f; color: #6ba8ff; padding: 1px 4px; font-size: 13px; margin: 0 1px; }
+        .damage-blunt { background: #2d5a2d; color: #90ee90; padding: 1px 4px; font-size: 13px; margin: 0 1px; }
+        .specialty-tag { background: #000000; color: #ffffff; padding: 1px 3px; font-size: 13px; margin: 1px; display: inline-block; }
         .rarity-0 { background: #555; color: #ddd; padding: 1px 6px; font-size: 10px; font-weight: bold; }
         .rarity-00 { background: #2d5a2d; color: #90ee90; padding: 1px 6px; font-size: 10px; font-weight: bold; }
         .rarity-000 { background: #5a2d5a; color: #ee90ee; padding: 1px 6px; font-size: 10px; font-weight: bold; }
@@ -83,18 +83,18 @@
          onerror="this.style.display='none'">
 </div>
 
-<!-- api Management -->
+<!-- api -->
 <div style="text-align: center; margin-bottom: 20px;">
     <a href="{{ route('identities.manage') }}"
        style="background: #333; color: #d4d4d4; padding: 10px 20px; text-decoration: none; border: 1px solid #555; border-radius: 4px; display: inline-block;">
-        I'm from Project Moon
+        I'm from Project Moon!
     </a>
 </div>
 
 <form onsubmit="generateTeam(event)">
     @csrf
 
-    <!-- Configuration Window -->
+    <!-- config -->
     <div class="limbus-window">
         <div class="limbus-titlebar">Team Configuration</div>
         <div class="limbus-content">
@@ -138,7 +138,7 @@
                 </div>
             </div>
 
-            <!-- options and generate Button -->
+            <!-- options and generate btn -->
             <div style="border-top: 1px solid #333; padding-top: 10px; margin-top: 10px;">
                 <label style="display: inline-block; margin-right: 15px; font-size: 12px;">
                     <input type="checkbox" name="include_base" value="1">
@@ -154,7 +154,7 @@
     </div>
 </form>
 
-<!-- Team Display Area (JavaScript will update this) -->
+<!-- Team Display Area -->
 <div class="limbus-window">
     <div class="limbus-titlebar">Team Display</div>
     <div class="limbus-content team-display-area" style="text-align: center; padding: 30px; color: #666; font-size: 12px;">
