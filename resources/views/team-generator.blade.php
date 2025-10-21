@@ -19,8 +19,8 @@
             border: 1px solid #333;
             margin: 8px auto;
             padding: 0;
-            max-width: 880px;
-            backdrop-filter: blur(5px);
+            max-width: 1280px;
+            backdrop-filter: blur(15px);
         }
         .limbus-titlebar {
             background: rgba(42, 42, 42, 0.9);
